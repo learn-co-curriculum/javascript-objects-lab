@@ -1,11 +1,11 @@
-:*global describe, it */
+/*global describe, it */
 
-it('defines a `recipes` object', () => {
+it('defines a `recipes` object', function() {
   expect(typeof recipes).to.equal('object')
 })
 
-describe('updateObjectWithKeyAndValue(object, key, value)', () => {
-  it('returns a clone of `object` by adding `key` and `value` (it is non-destructive)', () => {
+describe('updateObjectWithKeyAndValue(object, key, value)', function() {
+  it('returns a clone of `object` by adding `key` and `value` (it is non-destructive)', function() {
     var obj = { prop: 1 }
 
     expect(updateObjectWithKeyAndValue(obj, 'prop2', 2)).to.eql({
@@ -17,8 +17,8 @@ describe('updateObjectWithKeyAndValue(object, key, value)', () => {
   })
 })
 
-describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', () => {
-  it('updates `object` with the given `key` and `value` (it is destructive)', () => {
+describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', function() {
+  it('updates `object` with the given `key` and `value` (it is destructive)', function() {
     var obj = { prop: 1 }
 
     expect(destructivelyUpdateObjectWithKeyAndValue(obj, 'prop2', 2)).to.eql({
@@ -33,8 +33,8 @@ describe('destructivelyUpdateObjectWithKeyAndValue(object, key, value)', () => {
   })
 })
 
-describe('deleteFromObjectByKey(object, key)', () => {
-  it('deletes `key` from a clone of object and returns the new object (it is non-destructive)', () => {
+describe('deleteFromObjectByKey(object, key)', function() {
+  it('deletes `key` from a clone of object and returns the new object (it is non-destructive)', function() {
     var obj = { prop: 1 }
 
     expect(deleteFromObjectByKey(obj, 'prop')).to.eql({})
@@ -42,8 +42,8 @@ describe('deleteFromObjectByKey(object, key)', () => {
   })
 })
 
-describe('destructivelyDeleteFromObjectByKey(object, key)', () => {
-  it('deletes `key` from object and returns object', () => {
+describe('destructivelyDeleteFromObjectByKey(object, key)', function() {
+  it('deletes `key` from object and returns object', function() {
     var obj = { prop: 1 }
 
     expect(destructivelyDeleteFromObjectByKey(obj, 'prop')).to.eql({})
