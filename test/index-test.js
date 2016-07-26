@@ -1,7 +1,7 @@
 /*global describe, it */
 
 it('defines a `recipes` object', function() {
-  expect(typeof recipes).to.equal('object')
+  expect(typeof recipes).toEqual('object')
 })
 
 describe('updateObjectWithKeyAndValue(object, key, value)', function() {
