@@ -9,7 +9,7 @@ In this lab, we'll create objects and perform various operations on them.
 Be sure to run the tests to get a feel for the types of problems this lab is
 asking you to solve. In particular, you'll need to define a `recipes` object and
 then apply certain updates (destructively and non-destructively) in various
-functions.
+functions.  ATTENTION: The challenges do not build upon each other; the second test is unrelated to the `recipes` array.
 
 ![recipes](http://i.giphy.com/l0HFjaGmrbHanFXNe.gif)
 
